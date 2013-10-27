@@ -1,0 +1,52 @@
+<h2><%= t(:show, :default => "Show") %> <%= t(:clasification, :default => "clasification") %></h2>
+
+  <p>
+    <b><%= t(:isla, :default => "Isla") %>:</b>
+      <%= @clasification.isla %>
+  </p>
+  <p>
+    <b><%= t(:competicion, :default => "Competicion") %>:</b>
+      <%= @clasification.competicion %>
+  </p>
+  <p>
+    <b><%= t(:categoria, :default => "Categoria") %>:</b>
+      <%= @clasification.categoria %>
+  </p>
+  <p>
+    <b><%= t(:luchastotales, :default => "Luchastotales") %>:</b>
+      <%= @clasification.luchastotales %>
+  </p>
+  <p>
+    <b><%= t(:equipo, :default => "Equipo") %>:</b>
+      <%= @clasification.equipo %>
+  </p>
+  <p>
+    <b><%= t(:ganadas, :default => "Ganadas") %>:</b>
+      <%= @clasification.ganadas %>
+  </p>
+  <p>
+    <b><%= t(:perdidas, :default => "Perdidas") %>:</b>
+      <%= @clasification.perdidas %>
+  </p>
+  <p>
+    <b><%= t(:empatadas, :default => "Empatadas") %>:</b>
+      <%= @clasification.empatadas %>
+  </p>
+  <p>
+    <b><%= t(:luchasafavor, :default => "Luchasafavor") %>:</b>
+      <%= @clasification.luchasafavor %>
+  </p>
+  <p>
+    <b><%= t(:luchasencontra, :default => "Luchasencontra") %>:</b>
+      <%= @clasification.luchasencontra %>
+  </p>
+  <p>
+    <b><%= t(:puntos, :default => "Puntos") %>:</b>
+      <%= @clasification.puntos %>
+  </p>
+
+<!-- Beautiful_scaffold - AddField - Field - Do not remove -->
+
+<%= link_to t(:edit, :default => "Edit"), edit_clasification_path(@clasification), :class => "btn" %>
+<%= link_to t(:back, :default => "Back"), clasifications_path, :class => "btn" %>
+

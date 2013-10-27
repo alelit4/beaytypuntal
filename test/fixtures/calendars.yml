@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  local: MyString
+  visitante: MyString
+  resultadolocal: MyString
+  resultadovisitante: MyString
+  resultadolocal: 1
+  fecha: 2013-10-26
+  hora: MyString
+  jornada: MyString
+  sanciones: 1
+  competicion: MyString
+  isla: MyString
+  categoria: MyString
+
+two:
+  local: MyString
+  visitante: MyString
+  resultadolocal: MyString
+  resultadovisitante: MyString
+  resultadolocal: 1
+  fecha: 2013-10-26
+  hora: MyString
+  jornada: MyString
+  sanciones: 1
+  competicion: MyString
+  isla: MyString
+  categoria: MyString

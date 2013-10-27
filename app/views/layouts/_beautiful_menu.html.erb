@@ -1,0 +1,7 @@
+<!-- Beautiful Scaffold Menu Do Not Touch This -->
+      <li class="<%= "active" if params[:controller] == "clasifications" %>">
+        <%= link_to t(:clasifications, :default => "clasifications").capitalize, clasifications_path %>
+      </li>
+      <li class="<%= "active" if params[:controller] == "calendars" %>">
+        <%= link_to t(:calendars, :default => "calendars").capitalize, calendars_path %>
+      </li>

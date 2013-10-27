@@ -1,0 +1,84 @@
+
+<%= form_for(@clasification, :html => { :class => "form-horizontal" }) do |f| %>
+  <% if @clasification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@clasification.errors.count, "error") %> prohibited this clasification from being saved:</h2>
+
+      <ul>
+        <% @clasification.errors.full_messages.each do |msg| %><li><%= msg %></li><% end %>
+      </ul>
+    </div>
+  <% end %>
+      <div class="control-group">
+      <%= f.label :isla, t(:isla, :default => "isla").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :isla %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :competicion, t(:competicion, :default => "competicion").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :competicion %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :categoria, t(:categoria, :default => "categoria").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :categoria %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :luchastotales, t(:luchastotales, :default => "luchastotales").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :luchastotales %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :equipo, t(:equipo, :default => "equipo").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :equipo %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :ganadas, t(:ganadas, :default => "ganadas").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :ganadas %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :perdidas, t(:perdidas, :default => "perdidas").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :perdidas %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :empatadas, t(:empatadas, :default => "empatadas").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :empatadas %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :luchasafavor, t(:luchasafavor, :default => "luchasafavor").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :luchasafavor %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :luchasencontra, t(:luchasencontra, :default => "luchasencontra").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :luchasencontra %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :puntos, t(:puntos, :default => "puntos").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :puntos %>
+      </div>
+    </div>
+<!-- Beautiful_scaffold - AddField - Do not remove -->
+  <div class="form-actions">
+    <%= f.submit :class => "btn btn-primary" %>
+  </div>
+<% end %>
+
+

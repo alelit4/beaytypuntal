@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  isla: MyString
+  competicion: MyString
+  categoria: MyString
+  luchastotales: 1
+  equipo: MyString
+  ganadas: 1
+  perdidas: 1
+  empatadas: 1
+  luchasafavor: 1
+  luchasencontra: 1
+  puntos: 1
+
+two:
+  isla: MyString
+  competicion: MyString
+  categoria: MyString
+  luchastotales: 1
+  equipo: MyString
+  ganadas: 1
+  perdidas: 1
+  empatadas: 1
+  luchasafavor: 1
+  luchasencontra: 1
+  puntos: 1

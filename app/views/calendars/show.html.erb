@@ -1,0 +1,52 @@
+<h2><%= t(:show, :default => "Show") %> <%= t(:calendar, :default => "calendar") %></h2>
+
+  <p>
+    <b><%= t(:local, :default => "Local") %>:</b>
+      <%= @calendar.local %>
+  </p>
+  <p>
+    <b><%= t(:visitante, :default => "Visitante") %>:</b>
+      <%= @calendar.visitante %>
+  </p>
+  <p>
+    <b><%= t(:resultadolocal, :default => "Resultadolocal") %>:</b>
+      <%= @calendar.resultadolocal %>
+  </p>
+  <p>
+    <b><%= t(:resultadovisitante, :default => "Resultadovisitante") %>:</b>
+      <%= @calendar.resultadovisitante %>
+  </p>
+  <p>
+    <b><%= t(:fecha, :default => "Fecha") %>:</b>
+      <%= @calendar.fecha %>
+  </p>
+  <p>
+    <b><%= t(:hora, :default => "Hora") %>:</b>
+      <%= @calendar.hora %>
+  </p>
+  <p>
+    <b><%= t(:jornada, :default => "Jornada") %>:</b>
+      <%= @calendar.jornada %>
+  </p>
+  <p>
+    <b><%= t(:sanciones, :default => "Sanciones") %>:</b>
+      <%= @calendar.sanciones %>
+  </p>
+  <p>
+    <b><%= t(:competicion, :default => "Competicion") %>:</b>
+      <%= @calendar.competicion %>
+  </p>
+  <p>
+    <b><%= t(:isla, :default => "Isla") %>:</b>
+      <%= @calendar.isla %>
+  </p>
+  <p>
+    <b><%= t(:categoria, :default => "Categoria") %>:</b>
+      <%= @calendar.categoria %>
+  </p>
+
+<!-- Beautiful_scaffold - AddField - Field - Do not remove -->
+
+<%= link_to t(:edit, :default => "Edit"), edit_calendar_path(@calendar), :class => "btn" %>
+<%= link_to t(:back, :default => "Back"), calendars_path, :class => "btn" %>
+

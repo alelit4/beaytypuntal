@@ -1,0 +1,89 @@
+
+<%= form_for(@calendar, :html => { :class => "form-horizontal" }) do |f| %>
+  <% if @calendar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@calendar.errors.count, "error") %> prohibited this calendar from being saved:</h2>
+
+      <ul>
+        <% @calendar.errors.full_messages.each do |msg| %><li><%= msg %></li><% end %>
+      </ul>
+    </div>
+  <% end %>
+      <div class="control-group">
+      <%= f.label :local, t(:local, :default => "local").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :local %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :visitante, t(:visitante, :default => "visitante").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :visitante %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :resultadolocal, t(:resultadolocal, :default => "resultadolocal").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :resultadolocal %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :resultadovisitante, t(:resultadovisitante, :default => "resultadovisitante").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :resultadovisitante %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :fecha, t(:fecha, :default => "fecha").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <div class="input-append">
+          <input type="hidden" name="calendar[fecha(3i)]" id="calendar_fecha_3i" value="<%= begin @calendar.fecha.day rescue "" end %>" />
+          <input type="hidden" name="calendar[fecha(2i)]" id="calendar_fecha_2i" value="<%= begin @calendar.fecha.mon rescue "" end %>" />
+          <input type="hidden" name="calendar[fecha(1i)]" id="calendar_fecha_1i" value="<%= begin @calendar.fecha.year rescue "" end %>" />
+          <%= f.text_field :fecha, :class => "dpicker" %><span class="add-on"><i class="icon-calendar"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :hora, t(:hora, :default => "hora").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :hora %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :jornada, t(:jornada, :default => "jornada").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :jornada %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :sanciones, t(:sanciones, :default => "sanciones").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.number_field :sanciones %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :competicion, t(:competicion, :default => "competicion").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :competicion %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :isla, t(:isla, :default => "isla").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :isla %>
+      </div>
+    </div>
+    <div class="control-group">
+      <%= f.label :categoria, t(:categoria, :default => "categoria").capitalize, :class => "control-label" %>
+      <div class="controls">
+        <%= f.text_field :categoria %>
+      </div>
+    </div>
+<!-- Beautiful_scaffold - AddField - Do not remove -->
+  <div class="form-actions">
+    <%= f.submit :class => "btn btn-primary" %>
+  </div>
+<% end %>
+
+

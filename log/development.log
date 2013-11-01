@@ -6117,3 +6117,395 @@ Processing by ClasificationsController#getclasification as JSON
   Parameters: {"competicion"=>"liga", "isla"=>"tenerife"}
   [1m[36mClasification Load (0.3ms)[0m  [1mSELECT "clasifications".* FROM "clasifications" WHERE "clasifications"."competicion" = 'liga' AND "clasifications"."isla" = 'tenerife'[0m
 Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (6.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateCalendars (20131026121249)
+Migrating to CreateClasifications (20131026151622)
+  [1m[35m (1.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("calendars")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("clasifications")[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.5.127.1 at 2013-10-27 14:21:18 -0400
+Served asset /rails.png - 304 Not Modified (24ms)
+
+
+Started GET "/assets/rails.png" for 127.5.127.1 at 2013-10-27 14:21:27 -0400
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/calendars" for 127.5.127.1 at 2013-10-27 14:21:33 -0400
+Processing by CalendarsController#index as HTML
+  [1m[36mCalendar Load (0.5ms)[0m  [1mSELECT DISTINCT "calendars".* FROM "calendars" ORDER BY id DESC LIMIT 20 OFFSET 0[0m
+  Rendered layouts/_mass_inserting.html.erb (25.1ms)
+  Rendered layouts/_modal_columns.html.erb (3.9ms)
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(*) FROM "calendars" 
+  Rendered calendars/index.html.erb within layouts/beautiful_layout (345.6ms)
+  Rendered layouts/_beautiful_menu.html.erb (1.5ms)
+Completed 200 OK in 964ms (Views: 907.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /reset.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /datepicker.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/timepicker.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /timepicker.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/beautiful-scaffold.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /beautiful-scaffold.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/tagit-dark-grey.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /tagit-dark-grey.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /colorpicker.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap-wysihtml5.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /bootstrap-wysihtml5.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:35 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/a-wysihtml5-0.3.0.min.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /a-wysihtml5-0.3.0.min.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/beautiful_scaffold.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /beautiful_scaffold.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-colorpicker.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-colorpicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-datepicker.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-datetimepicker-for-beautiful-scaffold.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-datetimepicker-for-beautiful-scaffold.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-timepicker.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-timepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-wysihtml5.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap-wysihtml5.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /jquery.jstree.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.livequery.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /jquery.livequery.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.markitup.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /jquery.markitup.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.pjax.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /jquery.pjax.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/bbcode/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:36 -0400
+Served asset /markitup/sets/bbcode/set.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/default/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/default/set.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/html/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/html/set.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/markitup/sets/markdown/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/markdown/set.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/textile/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/textile/set.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/wiki/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/wiki/set.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tagit.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /tagit.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/skins/simple/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/skins/simple/style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/bbcode/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/bbcode/style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/wiki/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/wiki/style.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/markitup/sets/markdown/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/markdown/style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/html/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/html/style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/markitup/sets/textile/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /markitup/sets/textile/style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /application.js - 304 Not Modified (86ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.5.127.1 at 2013-10-27 14:21:37 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (2ms)
+
+
+Started GET "/calendars" for 127.5.127.1 at 2013-10-27 14:25:46 -0400
+Processing by CalendarsController#index as HTML
+  [1m[36mCalendar Load (0.4ms)[0m  [1mSELECT DISTINCT "calendars".* FROM "calendars" ORDER BY id DESC LIMIT 20 OFFSET 0[0m
+  Rendered layouts/_mass_inserting.html.erb (6.6ms)
+  Rendered layouts/_modal_columns.html.erb (1.0ms)
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT COUNT(*) FROM "calendars" 
+  Rendered calendars/index.html.erb within layouts/beautiful_layout (139.3ms)
+  Rendered layouts/_beautiful_menu.html.erb (0.6ms)
+Completed 200 OK in 190ms (Views: 187.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:46 -0400
+Served asset /reset.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:46 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:46 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/datepicker.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:46 -0400
+Served asset /datepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/timepicker.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:46 -0400
+Served asset /timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beautiful-scaffold.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:46 -0400
+Served asset /beautiful-scaffold.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tagit-dark-grey.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /tagit-dark-grey.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/colorpicker.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /colorpicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-wysihtml5.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-wysihtml5.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/a-wysihtml5-0.3.0.min.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /a-wysihtml5-0.3.0.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beautiful_scaffold.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /beautiful_scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-colorpicker.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-colorpicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datepicker.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-datepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-datetimepicker-for-beautiful-scaffold.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-datetimepicker-for-beautiful-scaffold.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-timepicker.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-wysihtml5.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap-wysihtml5.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.jstree.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /jquery.jstree.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.livequery.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:47 -0400
+Served asset /jquery.livequery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.markitup.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /jquery.markitup.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.pjax.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /jquery.pjax.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/bbcode/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/bbcode/set.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/default/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/default/set.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/html/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/html/set.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/markdown/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/markdown/set.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/textile/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/textile/set.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/wiki/set.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/wiki/set.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tagit.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /tagit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/skins/simple/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/skins/simple/style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/bbcode/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/bbcode/style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/wiki/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/wiki/style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/markdown/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/markdown/style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/html/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/html/style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/markitup/sets/textile/style.css?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /markitup/sets/textile/style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.5.127.1 at 2013-10-27 14:25:48 -0400
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/glyphicons-halflings.png" for 127.5.127.1 at 2013-10-27 14:25:49 -0400
+Served asset /glyphicons-halflings.png - 304 Not Modified (0ms)

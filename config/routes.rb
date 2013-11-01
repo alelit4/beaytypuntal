@@ -1,37 +1,4 @@
-Beaytypuntal::Application.routes.draw do
-  match "clasifications/search_and_filter" => "clasifications#index", :via => [:get, :post], :as => :search_clasifications
-  resources :clasifications do
-    collection do
-      post :batch
-      get  :treeview
-    end
-    member do
-      post :treeview_update
-    end
-  end
-
-
-  match "calendars/search_and_filter" => "calendars#index", :via => [:get, :post], :as => :search_calendars
-  resources :calendars do
-    collection do
-      post :batch
-      get  :treeview
-    end
-    member do
-      post :treeview_update
-    end
-  end
-
-
-  root :to => 'beautiful#dashboard'
-  match ':model_sym/select_fields' => 'beautiful#select_fields'
-
-#   match "calendarsdemo" => "calendars#demo", :via => [:get, :post]
-  
-  # The API routes
-  match "getcalendar" => "calendars#getallcalendars", :via => [:get, :post]
-  match "getclasification" => "clasifications#getclasification", :via => [:get, :post]
-
+RailsApp::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
